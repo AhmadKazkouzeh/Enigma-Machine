@@ -1,0 +1,29 @@
+body{
+    background:#191919;
+    color:#fff;
+    height: 100%;
+  }
+span{
+  word-break: break-all;
+}
+.close-icon{
+  color:#191919 !important;
+}
+.remove-plug{
+  cursor: pointer;
+}
+.plugboard-selection input{
+  width: 16px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.plugboard-selection div{
+  font-size: 14px;
+  text-transform: uppercase;
+}
+input{
+  text-transform: uppercase !important;
+}
+#rotorSelectionError, #plugError{
+  display: none;
+}

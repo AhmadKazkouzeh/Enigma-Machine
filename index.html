@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ahmed</title>
+ 
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/css/uikit.min.css" />
+<link rel="stylesheet" href="./pace-theme-flash.css">
+<script src="./pace.min.js"></script>
+<!-- UIkit JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit-icons.min.js"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body>
+    <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match uk-padding-large" uk-grid>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body uk-card-hover">
+                <h3 class="uk-card-title">Configuration</h3>
+                <p>
+                    <label>Select Rotor</label>
+                    <select id = "rotorOneS">
+                      <option selected value = "rotorTypeOne">Rotor One</option>
+                      <option value = "rotorTypeTwo">Rotor Two</option>
+                      <option value = "rotorTypeThree">Rotor Three</option>
+                      <option value = "rotorTypeFour">Rotor Four</option>
+                      <option value = "rotorTypeFive">Rotor Five</option>
+                    </select>
+                 </p>
+                 <p>
+                    <label>Select Start Position</label>
+                    <select id = "rotorOneSP">
+                     
+                    </select>
+                 </p>
+                 <p>
+                    <label>Select Rotor</label>
+                    <select id = "rotorTwoS">
+                      <option value = "rotorTypeOne">Rotor One</option>
+                      <option selected value = "rotorTypeTwo">Rotor Two</option>
+                      <option value = "rotorTypeThree">Rotor Three</option>
+                      <option value = "rotorTypeFour">Rotor Four</option>
+                      <option value = "rotorTypeFive">Rotor Five</option>
+                    </select>
+                 </p>
+                 <p>
+                    <label>Select Start Position</label>
+                    <select id = "rotorTwoSP">
+                     
+                      </select>
+                 </p>
+                 <p>
+                    <label>Select Rotor</label>
+                    <select id = "rotorThreeS">
+                        <option  value = "rotorTypeOne">Rotor One</option>
+                        <option value = "rotorTypeTwo">Rotor Two</option>
+                        <option selected value = "rotorTypeThree">Rotor Three</option>
+                        <option value = "rotorTypeFour">Rotor Four</option>
+                        <option value = "rotorTypeFive">Rotor Five</option>
+                    </select>
+                 </p>
+                 <p>
+                    <label>Select Start Position</label>
+                    <select id = "rotorThreeSP">
+                     
+                      </select>
+                 </p>
+                 <p>
+                    <label>Select Reflector</label>
+                    <select id = "reflectorS">
+                        <option selected value = "reflectorB">Reflector B</option>
+                        <option value = "reflectorC">Reflector C</option>
+                    </select>
+                 </p>
+
+                <span id="rotorSelectionError" class="uk-text-danger">*Each rotor should have a unique</span>
+            </div>
+            
+        </div>
+        <div>
+            <div class="uk-card uk-card-primary uk-card-body">
+                <h3 class="uk-card-title">Input</h3>
+                <div class="uk-margin">
+                    <textarea class="uk-textarea" maxlength='250' id='message' type='text' rows="5" pattern="[A-Za-z]" placeholder="Text to encrypt/dexrypt"></textarea>
+                    
+                </div>
+                <button id="encryptBtn" class="uk-button uk-button-secondary">Go</button>
+                <button id="clearBtn" class="uk-button uk-button-default">Clear</button>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-secondary uk-card-body">
+                <h3 class="uk-card-title">Result</h3>
+                <div class="results">
+                    <span id="result">Please input text to encrypt/decrypt first..</span>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="uk-child-width-1-1@m uk-grid-small uk-grid-match uk-padding-large" uk-grid>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body ">
+            <h3 class="uk-card-title">Plugboard</h3>
+
+            <div class="plugboard-selection" uk-grid>
+                
+            </div>
+            
+        </div>
+
+    </div>
+    <span id="plugError" class="uk-text-danger">This letter has been used</span>
+
+</div>
+
+  
+
+  <script src="script.js"></script>
+</body>
+
+</html>
